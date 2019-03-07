@@ -1,0 +1,14 @@
+#logo {
+    display: block;
+    max-width: 20%;
+    width: auto;
+    height: auto;
+}
+
+#title {
+    margin: 30px 0px 0px 30px;
+}
+
+h1 {
+    color: red;
+}
