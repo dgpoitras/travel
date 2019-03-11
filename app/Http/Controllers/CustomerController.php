@@ -7,6 +7,12 @@ use App\Customer;
 
 class CustomerController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index() 
     {
     	$customers = Customer::all();
@@ -27,6 +33,7 @@ class CustomerController extends Controller
 
     public function update(Request $request, $id)
     {
+
     	$request->validate([
             'CustFirstName' => 'required',
             'CustLastName' => 'required',

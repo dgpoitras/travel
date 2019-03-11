@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title')Customers@stop
+@section('title')
+Customers
+@stop
 
 @section('content')
  <div class="container-fluid">

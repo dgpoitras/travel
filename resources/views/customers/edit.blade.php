@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title')Customers@stop
+@section('title')
+Customers
+@endsection
 
 @section('content')
  <div class="container-fluid">
@@ -67,4 +69,4 @@
             </form>
         </div>
     </div>
-@stop
+@endsection

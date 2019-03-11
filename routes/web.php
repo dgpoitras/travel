@@ -32,3 +32,10 @@ Route::get('/', function () {
 // Route::get('/customers/{id}/edit', function($id)) {
 // 	return view('Customers.edit')
 // }
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
