@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Customer extends Model
+class Agency extends Model
 {
     //
-    public $primaryKey = 'CustomerId';
+    public $primaryKey = 'AgencyId';
 }

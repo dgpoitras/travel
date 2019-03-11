@@ -11,30 +11,19 @@
 |
 */
 
-Route::resource('customers', 'CustomerController') -> only([
-	'index', 'show', 'edit', 'update'
+Route::resource('customers', 'CustomerController')->only([
+    'index', 'show', 'edit', 'update', 'create', 'store'
 ]);
 
 Route::get('/', function () {
     return view('home', array(
-    	'destinations' => array(
-				        "https://www.tourismwinnipeg.com/" => "Winnipeg",
-				        "https://www.travelyukon.com/" => "Yukon",
-				        "https://www.visitrussia.com/" => "Russia"
-				    )
-	));
+        'destinations' => array(
+            "https://www.tourismwinnipeg.com/" => "Winnipeg",
+            "https://www.travelyukon.com/" => "Yukon",
+            "https://www.visitrussia.com/" => "Russia"
+        )
+    ));
 });
-
-// Route::get('/customers', function () {
-//     return view('Customers');
-// });
-
-// Route::get('/customers/{id}/edit', function($id)) {
-// 	return view('Customers.edit')
-// }
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 

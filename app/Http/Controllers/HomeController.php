@@ -23,11 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $destinations = array(
-                        "https://www.tourismwinnipeg.com/" => "Winnipeg",
-                        "https://www.travelyukon.com/" => "Yukon",
-                        "https://www.visitrussia.com/" => "Russia"
-                    );
-        return view('home', compact('destinations'));
+        return view('home');
     }
 }
